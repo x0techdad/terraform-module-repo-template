@@ -2,7 +2,7 @@
 
 This project defines a reference codebase structure, folder and file conventions and naming standards that can be used as boilerplate for Terraform Infrastructure as Code (IaC) in software projects.
 
-> **Note:** this is sample documentation - replace it with a brief description of your project or intended use of the code in this repository. 
+> **Note:** this is sample documentation - replace it with a brief description of your project. 
 
 Terrafor module [description of capabilities and resources created by module]. 
 
