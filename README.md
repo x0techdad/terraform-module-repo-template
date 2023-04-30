@@ -82,7 +82,6 @@ module "example_b" {
 > **Note:** in this section list known and tested module usage examples
 
 * [Wrapper `for_each`](./.examples/wrapper-for-each/)
-* [Wrapper module](./modules/wrapper/.examples/default/)
 
 
 ## Contributing
