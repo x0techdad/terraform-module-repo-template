@@ -1,23 +1,47 @@
 # [Provider] [Service Description] Terraform module repo
 
-This project defines a reference codebase structure, folder and file conventions and naming standards that can be used as boilerplate for Terraform Infrastructure as Code (IaC) in software projects.
+This project defines a reference codebase structure, folder and file conventions and naming standards that can be used as boilerplate for Terraform Infrastructure as Code (IaC) projects. This complete standard structure is implemented:
 
-> **Note:** this is sample documentation - replace it with a brief description of your project. 
+    .
+    ├── CONTRIBUTING.md               # Project contributing guidance
+    ├── README.md                     # Project overview
+    ├── LICENSE                       # Project license
+    ├── data.tf                       # Root module data resources
+    ├── main.tf                       # Root module
+    ├── outputs.tf                    # Root module outputs
+    ├── variables.tf                  # Root module variables
+    ├── versions.tf                   # Root module version locks
+    ├── ...                           # Additional files
+    ├── .vscode                       # VSCode workspace config files
+    ├── docs                          # Documentation
+    ├── examples                      # Example use cases
+    │   └── default                     # Defaults example
+    │   │   └── main.tf                   # Example module
+    │   ├── .../                        # Additional examples    
+    ├── modules                       # Nested/built-in modules
+    |   └── nested-module               # Nested module
+    |   │   ├── README.md                 # Module readme
+    |   │   ├── main.tf                   # Module
+    |   │   ├── outputs.tf                # Module outputs
+    |   │   └── variables.tf              # Module variables
+    |   ├── .../                        # Additional nested modules 
+    └── tests                         # Project tests
+        └── tflint                      # TFLint config files
 
-Terrafor module [description of capabilities and resources created by module]. 
+> **Note:** this is sample documentation - replace the content below with your project details. 
 
----
+Terraform module [description of capabilities and resources created by module]. 
 
 ## Available features
 
-> **Note:** In this section provide a list of features your IaC modules/templates deliver.
+> **Note:** in this section provide a list of features your IaC modules/templates deliver.
 
 * [Resource pattern] on [this provider] with [this added capability]
 * Seperate sub-modules or integrated module for [this resource] and/or [this service].
 
 ## Usage
 
-> **Note:** In this section provide an example on how to instatiate the IaC module, include a code snippet using the ```hcl``` block. Callout alternate usage scenarios, distinct architecture options, and available optional capabilites.
+> **Note:** in this section show the common use case of this IaC module, include a code snippet using the ```hcl``` block. Callout alternate use cases, and distinct architecture options.
 
 This project supports [description of common use scenario and resources created by module].
 
@@ -53,31 +77,15 @@ module "example_b" {
 }
 ```
 
-## Wrappers
+## Examples
 
-> **Note:** In this section list known and tested methods of wrapping your module in a seperate process, module, or function.
+> **Note:** in this section list known and tested module usage examples
 
-### Foreach
-
-When using this module you can create multiple similar resources wiht unique ids by using the [`for_each` Terraform meta-argument](https://developer.hashicorp.com/terraform/tutorials/configuration-language/for-each). 
-
-```hcl
-module "example_b" {
-  source  = "/[module local path or registry url]/"
-
-  foreach = { for obj in var.objects: 
-            obj.name => obj
-            if obj.name != null }
-...
-```
-
-### Module
-
-You can achieve similar results in scenarios where you cannot use `for_each` by instantiating the [wrapper module](./modules/wrapper).  
+* [Wrapper `for_each`](./.examples/wrapper-for-each/)
+* [Wrapper module](./modules/wrapper/.examples/default/)
 
 
-## Development and contributing
+## Contributing
+Project overview, references and guides for code contributors available [here](CONTRIBUTING.md).
 
-Check out the [development guide](docs/guide-development.md) file for an overview on how to develop the project.  
-
-Project overview, references and guides geared towards code contributors is available [here](CONTRIBUTING.md).
+Guidance on how to develop this project can be found [here](docs/guide-development.md).

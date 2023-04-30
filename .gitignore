@@ -1,8 +1,8 @@
 # Example usage directories
-#**/.examples/*
+#**/examples/*
 
 # Example usage directory by name
-**/.examples/example-b*/
+**/examples/default/*
 
 # Test directory, if you do not want to commit your local testing frameworks
 # into version control, uncomment the below line.
