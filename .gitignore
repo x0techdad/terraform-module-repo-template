@@ -7,6 +7,7 @@
 # Test directory, if you do not want to commit your local testing frameworks
 # into version control, uncomment the below line.
 #**/tests/*
+**/tflint/plugins/*
 
 # Individual .plan and .tfvars files, which are likely to contain sensitive data, such as
 # password, private keys, and other secrets. These should not be part of version
