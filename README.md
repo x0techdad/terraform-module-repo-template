@@ -1,4 +1,4 @@
-# [Provider] [Service Description] Terraform module repo
+# Terraform module repo template
 
 This project defines a reference codebase structure, folder and file conventions and naming standards that can be used as boilerplate for Terraform Infrastructure as Code (IaC) projects. This complete standard structure is implemented:
 
