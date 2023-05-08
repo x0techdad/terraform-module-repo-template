@@ -1,10 +1,24 @@
-# Development guide
+# Development Guide
 
-> **Note:** this is sample documentation - replace it with the guidance you want to provide project developers.
+<!---
+Use this section to provide a general statement to developers. 
+-->
+
+> **Note:** this documentation is a work-in-progress - if you see something that's not quite right or missing, we'd really appreciate a PR!
+
+---
 
 ## Requirements
-> **Note:** it is a good idea to list all software and tools required to develop your project.
 
-* Git
+<!---
+Use this section to list development requirements. 
+-->
 
-## 
+* Git 
+* PowerShell
+
+## Setup
+
+<!---
+Use this section to provide instructions on dev envionnment setup. 
+-->

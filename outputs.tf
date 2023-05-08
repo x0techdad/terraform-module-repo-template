@@ -26,10 +26,6 @@ output "string_list_all" {
   value = concat( local.string_to_list, var.string_list, var.string_map_list )
 }
 
-output "string_map_all" {
-  value = merge( var.string_map )
-}
-
 output "object" {
   value = var.object
 }
@@ -51,5 +47,9 @@ output "object_list_all" {
 }
 
 output "object_map_all" {
-  value = merge( var.object, var.object_map )
+  value = merge( var.string_map, var.object, var.object_map )
+}
+
+output "resource_block_output" {
+  value = null_resource.this.triggers
 }

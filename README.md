@@ -1,5 +1,11 @@
 # Terraform module repo template
 
+<!---
+Use this section to provide a general overivew of the project to readers. Typically in a Terraform project, a description of the module and resources created is included.   
+-->
+
+> **Note:** this is sample document - replace the content below with your project details
+
 This project defines a reference codebase structure, folder and file conventions and naming standards that can be used as boilerplate for Terraform Infrastructure as Code (IaC) projects. This complete standard structure is implemented:
 
     .
@@ -28,20 +34,23 @@ This project defines a reference codebase structure, folder and file conventions
     └── tests                         # Project tests
         └── tflint                      # TFLint config files
 
-> **Note:** this is sample documentation - replace the content below with your project details. 
 
-Terraform module [description of capabilities and resources created by module]. 
+Terraform module [description and resources created by module]. 
 
 ## Available features
 
-> **Note:** in this section provide a list of features your IaC modules/templates deliver.
+<!---
+Use this section to provide a lists of features, capabilites, and sub/integraged modules
+-->
 
-* [Resource pattern] on [this provider] with [this added capability]
+* [Deployment] on [this provider] with [this capability]
 * Seperate sub-modules or integrated module for [this resource] and/or [this service].
 
 ## Usage
 
-> **Note:** in this section show the common use case of this IaC module, include a code snippet using the ```hcl``` block. Callout alternate use cases, and distinct architecture options.
+<!---
+Use this section to demo the common use case of the module, include a code snippet using the ```hcl``` block. Include alternate use cases, and distinct architecture options.
+-->
 
 This project supports [description of common use scenario and resources created by module].
 
@@ -79,12 +88,19 @@ module "example_b" {
 
 ## Examples
 
-> **Note:** in this section list known and tested module usage examples
+<!---
+Use this section to demo known and tested module usage examples. 
+-->
 
 * [Wrapper `for_each`](./.examples/wrapper-for-each/)
 
 
 ## Contributing
-Project overview, references and guides for code contributors available [here](CONTRIBUTING.md).
 
-Guidance on how to develop this project can be found [here](docs/guide-development.md).
+<!---
+Use this section to provide guidance and references to project contributors and developers.  
+-->
+
+Project overview, references and guides for contributors available [here](CONTRIBUTING.md).
+
+Guides for code developers avaialble [here](docs/guide-development.md).
